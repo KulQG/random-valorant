@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Agent</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      href="https://logos-download.com/wp-content/uploads/2021/01/Valorant_Logo.png"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="head">Выбери персонажей</h1>
+    </header>
+    <section class="cards">
+      <template class="cards__template">
+        <article class="card">
+          <img class="card__img" />
+          <p class="card__name"></p>
+        </article>
+      </template>
+    </section>
+    <button class="button"><p class="button__text">Рандом</p></button>
+    <section class="result">
+      <h3 class="result__head">Твой персонаж:</h3>
+      <template class="result__template">
+        <article class="card">
+          <img class="card__img" />
+          <p class="card__name"></p>
+        </article>
+      </template>
+    </section>
+    <script src="cards.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

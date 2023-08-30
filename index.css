@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 15px;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 15px;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.card {
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 8%;
+    cursor: pointer;
+}
+
+.card_active {
+    border: 3px solid green;
+    background: green;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__name {
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.button {
+    width: 20%;
+    height: 30px;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button__text {
+    margin: 0;
+    font-size: 20px;
+}
+
+@media all and (width < 500px) {
+    .cards {
+        width: 99%;
+        gap: 5px;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        width: 16%;
+        border: 1px solid black;
+        border-radius: 5px;
+        /* padding: 4px; */
+    }
+
+    .card__name {
+        font-size: 15px;
+    }
+}
